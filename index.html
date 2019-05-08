@@ -1,55 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <title>TRAVELGO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="">
+<title>SASS연습</title>
 </head>
-
 <body>
-<div></div>
-<!-- header -->
-<header>
-    <div class="header__logo"><img src="./image/logo.png" alt="logo.png"></div>
-    <div class="header-menu--top">
-        <ul class="header-menu--top__list"></ul></div>
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT US</a></li>
-            <li><a href="">SERVICE</a></li>
-            <li><a href="">TEAVEL INFO</a></li>
-            <li><a href="">CONTACT</a></li>
-        </ul>
+<div>
+
+    <!-- header -->
+
+<div class="header">
+    <div class="header-logo">
+        <img src="./images/logo.png" alt="로고">
     </div>
-    <input type="checkbox" name="">
-    <label for=""><img src="./image/menu.png" alt="men.png"></label>
-    <div class="header-menu--side">
-        <ul class="header-menu--side__list">
+    <nav class="header-nav">
+        <ul class="header-menu__list">
             <li><a href="#!">HOME</a></li>
             <li><a href="#!">ABOUT US</a></li>
-            <li><a href="#!">SERVICE</a></li>
+            <li><a href="#!">SERVICES</a></li>
             <li><a href="#!">TRAVEL INFO</a></li>
             <li><a href="#!">CONTACT</a></li>
         </ul>
-    </div>
-</header>
+    </nav>
+
+</div>
+
+<!-- menu--fiexd -->
+<div class="aside">
+    <input type="checkbox" name="aside-menu-button" id="menu-button" checked>
+    <div class="aside__button fiexd"><label for=""></label></div>
+    <nav class="aside__nav fiexd">
+        <ul class="aside__list">
+            <li><a href="#!">HOME</a></li>
+            <li><a href="#!">ABOUT US</a></li>
+            <li><a href="#!">SERVICES</a></li>
+            <li><a href="#!">TRAVEL INFO</a></li>
+            <li><a href="#!">CONTACT</a></li>
+        </ul>
+    </nav>
+</div>
 
 <!-- section -->
-<section>
 
-</section>
+<div id="section">
+    
+    <div class="section-visual visual">
+        <input type="radio" name="visual__slide" id="visual__slide1" checked>
+        <input type="radio" name="visual__slide" id="visual__slide2">
+        <input type="radio" name="visual__slide" id="visual__slide3">
+        <div class="visual__images">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="visual-banner">
+            <div class="visual-banner__text">
+                <p>
+                    CORDILLERA
+                    MOUNTAINS
+                </p>
+                <p>TREKKING THE MOUNTAINS OF CONRDILLERA BLANCA</p>
+            </div>
+            <div class="visual-banner__image">
+                <img src="./image//icon/twitter.png" alt="twitter">
+                <img src="./image//icon/facebook.png" alt="facebook">
+                <img src="./image//icon/google.png" alt="google">
+            </div>
+            <div class="visual-banner__button">
+                <div><label for="visual_slide1"></label></div>
+                <div><label for="visual_slide2"></label></div>
+                <div><label for="visual_slide3"></label></div>
+            </div>
+        </div>
+    </div>
+    
+<!-- section-visual visual -->
+<!-- visual__element -->
 
-    <!-- footer -->
-    <footer>
+    <!-- <div class="section-about about"> -->
+ 
+    <!-- section-contentTop -->
+    <div class="section-contentTop contentTop">
+        <p class="contentTop__title">WELCOM</p>
+        <p class="contentTop__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiumod tempor incididunt ut labore magna aliqua. Ut enim ad minim veniamm quis nostrud exercitation ullamco laboris nisi aliquip ex ea commodo</p>
+        <div class="contentTop__button">
+            <a href="" class="contentTop__button-about">ABOUT US</a>
+            <a href="" class="contentTop__button-Ragister">REGISTRATION</a>
+        </div>
+    </div>
 
-    </footer>
+    <!-- section-contentCenter -->
+    <div class="section-contentCenter contentCenter">
+        <div class=""></div>
+        <div class="contentCenter__wrap">
+            <div class="contentCenter__wrap__item">
+                <div class="image"><img src="" alt=""></div>
+                <div class="text">
+                    <p>1,245</p>
+                    <p>Happy Travellers</p>
+                </div>
+            </div>
+            <div class="contentCenter__wrap__item">
+                <div class="image"><img src="" alt=""></div>
+                <div class="text">
+                    <p>845</p>
+                    <p>Videos</p>
+                </div>
+            </div>
+            <div class="contentCenter__wrap__item">
+                <div class="image"><img src="" alt=""></div>
+                <div class="text">
+                    <p>9,543</p>
+                    <p>Photos</p>
+                </div>
+            </div>
+            <div class="contentCenter__wrap__item">
+                <div class="image"><img src="" alt=""></div>
+                <div class="text">
+                    <p>145</p>
+                    <p>Treks and tours</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section-contentBottom -->
+    <div class="section-contentBottom contentBottom">
+        <div class="contentBottom__title"></div>
+        <div class="contentBottom__wrap">
+            <div class="contentbottom__wrap__item">
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing alit, sed do eiusmodtempor incididunt</div>
+                <div>Mary, Nepal</div>
+            </div>
+            <div class="contentbottom__wrap__item">
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing alit, sed do eiusmodtempor incididunt</div>
+                <div>Jane, Germany</div>
+            </div>
+            <div class="contentbottom__wrap__item">
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing alit, sed do eiusmodtempor incididunt</div>
+                <div>Robert, China</div>
+            </div>
+            <div class="contentbottom__wrap__item">
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing alit, sed do eiusmodtempor incididunt</div>
+                <div>Niger, Alps</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section__search-form -->
+    <div class="section__search-form search-form">
+        <div class="search-form__wrap">
+            <div class="search-form__wrap__left">NEWSLETTER</div>
+            <div class="search-form__wrap__right">
+                <input type="text" placeholder="Email">
+                <div>SUBSRIBE</div>
+            </div>
+        </div>
+    </div>
+
+</div>
 
 
+<!-- footer -->
+
+<div class="fotoer">
+    <div class="fotoer__wrap">
+        <div class="fotoer__wrap-left">
+            
+        </div>
+        <div class="fotoer__wrap-right">
+
+        </div>
+    </div>
+    <div class="fotoer-copy">Copyright &copy; 2019 TRAVELGO All rights reserved</div>
+</div>
+
+</div>
 </body>
-
 </html>
-<!-- bem방식의 클레스 네이밍 -->
-<!-- 홈페이지 section 영역별 이름 -->
-<!-- gulp안의 sass, sass --watch 효율성 차이 -->
+<!-- aside__nav--fiexd -->
